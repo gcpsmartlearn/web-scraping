@@ -1,0 +1,66 @@
+USE GRAPH MERCURY_DEV
+DROP JOB json_load
+//DROP JOB kafka_edge_load
+DROP DATA_SOURCE kaf1
+
+CREATE DATA_SOURCE KAFKA kaf1 FOR GRAPH MERCURY_DEV;
+SET kaf1 = "/home/tigergraph/tigergraph/config_kafka/broker.config";
+
+GRANT DATA_SOURCE kaf1 TO GRAPH MERCURY_DEV
+
+CREATE LOADING JOB json_load 
+FOR GRAPH MERCURY_DEV
+{
+DEFINE FILENAME f1 = "$kaf1:/home/tigergraph/tigergraph/config_kafka/topic_config/driver.json"; 
+LOAD f1 TO VERTEX Driver VALUES ($"after":"Id", $"after":"DriverStatus",$"after":"StatusLastInitiated", $"after":"RemTimeForShiftReset", $"after":"RemTimeForReset70", $"after":"DriverStatus", $"after":"Qualification", $"after":"TravelPlanUpdated", $"after":"HomeTerminalTimeZone", $"after":"DriverReferenceNumber", $"after":"CurrentLastUpdate", $"after":"CurrentHOSDetails", $"after":"CurrentRecapDetails") USING JSON_FILE="true";
+}
+RUN JOB json_load
+
+// CREATE LOADING JOB Load_SNOMEDCT_Concept
+// FOR GRAPH DataPipeline 
+// {
+// DEFINE FILENAME f1 = "$SNOMEDCT_Concept_Source:SNOMEDCT_Partition.json"; 
+// LOAD f1 TO VERTEX SNOMEDCT_Concept VALUES ($0, $1, $2) USING SEPARATOR=”,”;
+//}
+
+
+// CREATE VERTEX DRIVER (PRIMARY_ID Id STRING, DriverStatus STRING)
+// CREATE GRAPH MERCURY_DEV (*)
+
+CREATE LOADING JOB json_load 
+FOR GRAPH MERCURY_DEV
+{
+DEFINE FILENAME f1 = "$kaf1:/home/tigergraph/tigergraph/config_kafka/topic_config/driver.json"; 
+LOAD f1 TO VERTEX Driver VALUES ($"Id", $"DriverStatus") USING JSON_FILE="true";
+}
+RUN JOB json_load
+
+h&3bs5Nkdc
+
+
+//LOAD "encoding.json" TO VERTEX Driver
+ //   VALUES ($"Id", $"DriverStatus") USING JSON_FILE="true";
+
+
+
+
+
+
+
+ USE GRAPH MERCURY_DEV
+DROP JOB erd_order_details_upsert
+//DROP JOB kafka_edge_load
+DROP DATA_SOURCE kaf1
+
+CREATE DATA_SOURCE KAFKA kaf1 FOR GRAPH MERCURY_DEV
+SET kaf1 = "/home/tigergraph/tigergraph/config_kafka/broker.config"
+
+GRANT DATA_SOURCE kaf1 TO GRAPH MERCURY_DEV
+
+CREATE LOADING JOB erd_order_details_upsert
+FOR GRAPH MERCURY_DEV
+{
+DEFINE FILENAME f1 = "$kaf1:/home/tigergraph/tigergraph/config_kafka/topic_config/erd_orderdetails.json";
+LOAD f1 TO VERTEX Assignment(Id, Type, AssignedTo, WindowOpenTime, WindowCloseTime, LoadType, LoadTime, AppointmentSet, PlannedBy, RawWindowOpenTime, RawWindowCloseTime, DriverInstructions, ActualArrivalTime, ActualDepartureTime, OnSiteBreakFlag) VALUES ($"after":"Id", $"after":"Type",$"after":"AssignedToTruckId", $"after":"AppointmentOpen", $"after":"AppointmentClose", $"after":"LoadType", $"after":"LoadTime", $"after":"AppointmentSet", $"after":"PlannedBy", $"after":"RawApptOpen", $"after":"RawApptClose", $"after":"DriverInstructions", $"after":"ActualArrivalTime", $"after":"ActualDepartureTime", $"after":"OnSiteBreakFlag") USING JSON_FILE="true";
+}
+RUN LOADING JOB erd_order_details_upsert

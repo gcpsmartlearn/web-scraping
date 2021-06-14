@@ -1,0 +1,15 @@
+/home/tigergraph/MercuryDataPipeline/confluent/bin/kafka-server-start /home/tigergraph/MercuryDataPipeline/confluent/etc/kafka/server.properties
+
+
+
+/home/tigergraph/MercuryDataPipeline/confluent/bin/zookeeper-server-start /home/tigergraph/MercuryDataPipeline/confluent/etc/kafka/zookeeper.properties
+
+/home/tigergraph/MercuryDataPipeline/confluent/bin/kafka-server-start /home/tigergraph/MercuryDataPipeline/confluent/etc/kafka/server.properties
+
+--Connect Distributed
+/home/tigergraph/MercuryDataPipeline/confluent/bin/connect-distributed /home/tigergraph/MercuryDataPipeline/confluent/etc/kafka/connect-distributed.properties
+
+
+/home/tigergraph/MercuryDataPipeline/CMAK/target/universal/cmak-3.0.0.5
+
+/usr/bin/http-server

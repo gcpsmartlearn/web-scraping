@@ -1,0 +1,326 @@
+/home/tigergraph/tigergraph/config_kafka
+
+
+{\"broker\":\"pkc-ep9mm.us-east-2.aws.confluent.cloud:9092\",\"kafka_config\": { \"sasl.mechanisms\": \"PLAIN\", \"security.protocol\": \"SASL_SSL\",\"sasl.username\": \"QSDT6CUUATQEBL7H\",\"sasl.password\": \"EWNZsv7j1Au81EUfAY+ojbOiA78ZTph4p7RcUdUlr7IGEpIPsAsY6UXj2L59g0LJ\",\"group.id\": \"example_group_1\"}}
+
+
+{\"broker\":\"pkc-ep9mm.us-east-2.aws.confluent.cloud:9092\",\"kafka_config\": {\"sasl.jaas.config\":\"org.apache.kafka.common.security.plain.PlainLoginModule required username='QSDT6CUUATQEBL7H' password='EWNZsv7j1Au81EUfAY+ojbOiA78ZTph4p7RcUdUlr7IGEpIPsAsY6UXj2L59g0LJ'",\"group.id\": \"example_group_1\"}}
+
+"sasl.jaas.config":"org.apache.kafka.common.security.plain.PlainLoginModule required username='QSDT6CUUATQEBL7H' password='EWNZsv7j1Au81EUfAY+ojbOiA78ZTph4p7RcUdUlr7IGEpIPsAsY6UXj2L59g0LJ'"
+
+
+
+mercuryERD.mercury.i5cul_erd_businessentity
+mercuryERD.mercury.i5cul_erd_businessentity_external
+mercuryERD.mercury.i5cul_erd_driver
+mercuryERD.mercury.i5cul_erd_driverhometimeupdate
+mercuryERD.mercury.i5cul_erd_driverupdate
+mercuryERD.mercury.i5cul_erd_location
+mercuryERD.mercury.i5cul_erd_orderdetails
+mercuryERD.mercury.i5cul_erd_orderdetails_bk
+mercuryERD.mercury.i5cul_erd_orderdetails_external
+mercuryERD.mercury.i5cul_erd_orderrequest
+mercuryERD.mercury.i5cul_erd_orderrequest_external
+mercuryERD.mercury.i5cul_erd_rule
+mercuryERD.mercury.i5cul_erd_schedule
+mercuryERD.mercury.i5cul_erd_sftp_access
+mercuryERD.mercury.i5cul_erd_truck
+mercuryERD.mercury.i5cul_erd_truckupdate
+mercuryERD.mercury.i5cul_staging_businessentity
+mercuryERD.mercury.i5cul_staging_driver
+mercuryERD.mercury.i5cul_staging_location
+mercuryERD.mercury.i5cul_staging_locationschedule
+mercuryERD.mercury.i5cul_staging_order
+mercuryERD.mercury.i5cul_staging_truck
+
+
+
+
+Driver
+__consumer_offsets
+debezium_history_storage
+mercuryERD.mercury.businessentity_external_bckp
+mercuryERD.mercury.edgeattributemapping
+mercuryERD.mercury.i5cul_action_log_config
+mercuryERD.mercury.i5cul_action_logs
+mercuryERD.mercury.i5cul_action_logs_extensions
+mercuryERD.mercury.i5cul_action_logs_users
+mercuryERD.mercury.i5cul_acymailing_config
+mercuryERD.mercury.i5cul_acymailing_fields
+mercuryERD.mercury.i5cul_acymailing_history
+mercuryERD.mercury.i5cul_acymailing_list
+mercuryERD.mercury.i5cul_acymailing_listsub
+mercuryERD.mercury.i5cul_acymailing_mail
+mercuryERD.mercury.i5cul_acymailing_subscriber
+mercuryERD.mercury.i5cul_acymailing_template
+mercuryERD.mercury.i5cul_ak_profiles
+mercuryERD.mercury.i5cul_ak_stats
+mercuryERD.mercury.i5cul_akeeba_common
+mercuryERD.mercury.i5cul_assets
+mercuryERD.mercury.i5cul_banner_clients
+mercuryERD.mercury.i5cul_banners
+mercuryERD.mercury.i5cul_categories
+mercuryERD.mercury.i5cul_community_activities
+mercuryERD.mercury.i5cul_community_backgrounds
+mercuryERD.mercury.i5cul_community_badges
+mercuryERD.mercury.i5cul_community_config
+mercuryERD.mercury.i5cul_community_events_category
+mercuryERD.mercury.i5cul_community_fields
+mercuryERD.mercury.i5cul_community_fields_values
+mercuryERD.mercury.i5cul_community_group_stats
+mercuryERD.mercury.i5cul_community_groups
+mercuryERD.mercury.i5cul_community_groups_category
+mercuryERD.mercury.i5cul_community_groups_invite
+mercuryERD.mercury.i5cul_community_groups_members
+mercuryERD.mercury.i5cul_community_invitations
+mercuryERD.mercury.i5cul_community_mailq
+mercuryERD.mercury.i5cul_community_moods
+mercuryERD.mercury.i5cul_community_pages_category
+mercuryERD.mercury.i5cul_community_photos_albums
+mercuryERD.mercury.i5cul_community_polls_category
+mercuryERD.mercury.i5cul_community_profile_stats
+mercuryERD.mercury.i5cul_community_profiles
+mercuryERD.mercury.i5cul_community_profiles_fields
+mercuryERD.mercury.i5cul_community_theme
+mercuryERD.mercury.i5cul_community_userpoints
+mercuryERD.mercury.i5cul_community_users
+mercuryERD.mercury.i5cul_community_videos_category
+mercuryERD.mercury.i5cul_contact_details
+mercuryERD.mercury.i5cul_content
+mercuryERD.mercury.i5cul_content_frontpage
+mercuryERD.mercury.i5cul_content_rating
+mercuryERD.mercury.i5cul_content_types
+mercuryERD.mercury.i5cul_contentbuilder_articles
+mercuryERD.mercury.i5cul_contentbuilder_elements
+mercuryERD.mercury.i5cul_contentbuilder_forms
+mercuryERD.mercury.i5cul_contentbuilder_list_states
+mercuryERD.mercury.i5cul_contentbuilder_records
+mercuryERD.mercury.i5cul_contentbuilder_resource_access
+mercuryERD.mercury.i5cul_contentbuilder_storage_fields
+mercuryERD.mercury.i5cul_contentbuilder_storages
+mercuryERD.mercury.i5cul_contentitem_tag_map
+mercuryERD.mercury.i5cul_csvi_availablefields
+mercuryERD.mercury.i5cul_csvi_availabletables
+mercuryERD.mercury.i5cul_csvi_logdetails
+mercuryERD.mercury.i5cul_csvi_logs
+mercuryERD.mercury.i5cul_csvi_mappedfields
+mercuryERD.mercury.i5cul_csvi_processes
+mercuryERD.mercury.i5cul_csvi_tasks
+mercuryERD.mercury.i5cul_csvi_templatefields
+mercuryERD.mercury.i5cul_csvi_templates
+mercuryERD.mercury.i5cul_djtabs_groups
+mercuryERD.mercury.i5cul_djtabs_items
+mercuryERD.mercury.i5cul_djtabs_themes
+mercuryERD.mercury.i5cul_erd_businessentity
+mercuryERD.mercury.i5cul_erd_businessentity_external
+mercuryERD.mercury.i5cul_erd_driver
+mercuryERD.mercury.i5cul_erd_driverhometimeupdate
+mercuryERD.mercury.i5cul_erd_driverupdate
+mercuryERD.mercury.i5cul_erd_location
+mercuryERD.mercury.i5cul_erd_orderdetails
+mercuryERD.mercury.i5cul_erd_orderdetails_bk
+mercuryERD.mercury.i5cul_erd_orderdetails_external
+mercuryERD.mercury.i5cul_erd_orderrequest
+mercuryERD.mercury.i5cul_erd_orderrequest_external
+mercuryERD.mercury.i5cul_erd_rule
+mercuryERD.mercury.i5cul_erd_schedule
+mercuryERD.mercury.i5cul_erd_sftp_access
+mercuryERD.mercury.i5cul_erd_truck
+mercuryERD.mercury.i5cul_erd_truckupdate
+mercuryERD.mercury.i5cul_extensions
+mercuryERD.mercury.i5cul_facileforms_config
+mercuryERD.mercury.i5cul_facileforms_elements
+mercuryERD.mercury.i5cul_facileforms_forms
+mercuryERD.mercury.i5cul_facileforms_packages
+mercuryERD.mercury.i5cul_facileforms_pieces
+mercuryERD.mercury.i5cul_facileforms_records
+mercuryERD.mercury.i5cul_facileforms_scripts
+mercuryERD.mercury.i5cul_facileforms_subrecords
+mercuryERD.mercury.i5cul_finder_links
+mercuryERD.mercury.i5cul_finder_links_terms0
+mercuryERD.mercury.i5cul_finder_links_terms1
+mercuryERD.mercury.i5cul_finder_links_terms2
+mercuryERD.mercury.i5cul_finder_links_terms3
+mercuryERD.mercury.i5cul_finder_links_terms4
+mercuryERD.mercury.i5cul_finder_links_terms6
+mercuryERD.mercury.i5cul_finder_links_terms7
+mercuryERD.mercury.i5cul_finder_links_terms8
+mercuryERD.mercury.i5cul_finder_links_terms9
+mercuryERD.mercury.i5cul_finder_links_termsa
+mercuryERD.mercury.i5cul_finder_links_termsb
+mercuryERD.mercury.i5cul_finder_links_termsc
+mercuryERD.mercury.i5cul_finder_links_termsd
+mercuryERD.mercury.i5cul_finder_links_termse
+mercuryERD.mercury.i5cul_finder_links_termsf
+mercuryERD.mercury.i5cul_finder_taxonomy
+mercuryERD.mercury.i5cul_finder_taxonomy_map
+mercuryERD.mercury.i5cul_finder_terms
+mercuryERD.mercury.i5cul_finder_terms_common
+mercuryERD.mercury.i5cul_finder_types
+mercuryERD.mercury.i5cul_j2store_cartitems
+mercuryERD.mercury.i5cul_j2store_carts
+mercuryERD.mercury.i5cul_j2store_configurations
+mercuryERD.mercury.i5cul_j2store_countries
+mercuryERD.mercury.i5cul_j2store_currencies
+mercuryERD.mercury.i5cul_j2store_customfields
+mercuryERD.mercury.i5cul_j2store_emailtemplates
+mercuryERD.mercury.i5cul_j2store_lengths
+mercuryERD.mercury.i5cul_j2store_orderstatuses
+mercuryERD.mercury.i5cul_j2store_productimages
+mercuryERD.mercury.i5cul_j2store_productquantities
+mercuryERD.mercury.i5cul_j2store_products
+mercuryERD.mercury.i5cul_j2store_variants
+mercuryERD.mercury.i5cul_j2store_weights
+mercuryERD.mercury.i5cul_j2store_zones
+mercuryERD.mercury.i5cul_languages
+mercuryERD.mercury.i5cul_menu
+mercuryERD.mercury.i5cul_menu_types
+mercuryERD.mercury.i5cul_mercury
+mercuryERD.mercury.i5cul_mercury_acl
+mercuryERD.mercury.i5cul_mercury_displaytable
+mercuryERD.mercury.i5cul_mercury_edgeset
+mercuryERD.mercury.i5cul_mercury_edgetgattributemapping
+mercuryERD.mercury.i5cul_mercury_edgetgmapping
+mercuryERD.mercury.i5cul_mercury_erdtables
+mercuryERD.mercury.i5cul_mercury_linetype
+mercuryERD.mercury.i5cul_mercury_nodetype
+mercuryERD.mercury.i5cul_mercury_stoptypes
+mercuryERD.mercury.i5cul_mercury_tiger_graph_configuration
+mercuryERD.mercury.i5cul_mercury_vertexset
+mercuryERD.mercury.i5cul_mercury_vertextgattributemapping
+mercuryERD.mercury.i5cul_mercury_vertextgmapping
+mercuryERD.mercury.i5cul_modules
+mercuryERD.mercury.i5cul_modules_menu
+mercuryERD.mercury.i5cul_newsfeeds
+mercuryERD.mercury.i5cul_overrider
+mercuryERD.mercury.i5cul_postinstall_messages
+mercuryERD.mercury.i5cul_revslider_css
+mercuryERD.mercury.i5cul_revslider_layer_animations
+mercuryERD.mercury.i5cul_revslider_sliders
+mercuryERD.mercury.i5cul_revslider_slides
+mercuryERD.mercury.i5cul_rsfirewall_configuration
+mercuryERD.mercury.i5cul_rsfirewall_hashes
+mercuryERD.mercury.i5cul_rsfirewall_signatures
+mercuryERD.mercury.i5cul_schemas
+mercuryERD.mercury.i5cul_session
+mercuryERD.mercury.i5cul_spmedia
+mercuryERD.mercury.i5cul_sppagebuilder
+mercuryERD.mercury.i5cul_sppagebuilder_integrations
+mercuryERD.mercury.i5cul_spsimpleportfolio_items
+mercuryERD.mercury.i5cul_spsimpleportfolio_tags
+mercuryERD.mercury.i5cul_staging_businessentity
+mercuryERD.mercury.i5cul_staging_driver
+mercuryERD.mercury.i5cul_staging_location
+mercuryERD.mercury.i5cul_staging_locationschedule
+mercuryERD.mercury.i5cul_staging_order
+mercuryERD.mercury.i5cul_staging_truck
+mercuryERD.mercury.i5cul_tags
+mercuryERD.mercury.i5cul_template_styles
+mercuryERD.mercury.i5cul_ucm_base
+mercuryERD.mercury.i5cul_ucm_content
+mercuryERD.mercury.i5cul_ucm_history
+mercuryERD.mercury.i5cul_update_sites
+mercuryERD.mercury.i5cul_update_sites_extensions
+mercuryERD.mercury.i5cul_updates
+mercuryERD.mercury.i5cul_user_keys
+mercuryERD.mercury.i5cul_user_usergroup_map
+mercuryERD.mercury.i5cul_usergroups
+mercuryERD.mercury.i5cul_users
+mercuryERD.mercury.i5cul_utf8_conversion
+mercuryERD.mercury.i5cul_viewlevels
+mercuryERD.mercury.i5cul_wf_profiles
+mercuryERD.mercury.orderdetails_external_bckp
+mercuryERD.mercury.orderdetails_external_tmp
+mercuryERD.mercury.orderrequest_external_bckp
+mercuryERD.mercury.orderrequest_external_tmp
+
+
+
+
+java Mysql2Mysql stgDvrErdDvr mercury.dev.dctinc.net 3306 kafka h&3bs5Nkdc mercury mercury.i5cul_staging_driver insert_driver
+
+
+BEGIN
+	DECLARE is_done INTEGER DEFAULT 0;
+	DECLARE stagingId varchar(100) DEFAULT "";
+	
+	DECLARE stagingCur CURSOR for select Id from i5cul_staging_driver;
+	DECLARE CONTINUE HANDLER FOR NOT FOUND SET is_done = 1;
+	
+	INSERT INTO i5cul_erd_driver (`DriverId`,`Beid`, `Qualifications`, `HomeTimeZone` ,`StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`) select DriverNumber, BusinessEntityNumber, Qualification, HomeTerminalTimeZone, Id, 'New',999,CURRENT_TIMESTAMP,999 from i5cul_staging_driver ON DUPLICATE KEY UPDATE 
+	i5cul_erd_driver.Qualifications = i5cul_staging_driver.Qualification,
+	i5cul_erd_driver.HomeTimeZone = i5cul_staging_driver.HomeTerminalTimeZone,
+	i5cul_erd_driver.StagingRecordId = i5cul_staging_driver.Id,
+	i5cul_erd_driver.IsSubmitted = 'Updated',
+	i5cul_erd_driver.ModifiedBy = 999 ;
+
+
+	INSERT INTO `i5cul_erd_driverupdate` (`DriverId`,`DriverStatus`, `DateTimeUpdated`, `HOSStatus`, `StatusInitiated`, `HOSClocks`, `RemTimeForShiftReset`, `RemTimeForReset70`, `Recaps`, `TruckId`, `TrainingType`, `Seat`, `DateTimeSeated`, `IsSubmitted`, `CreatedBy`,`CreatedDate`, `ModifiedBy`) select DriverNumber, DriverStatus, CurrentLastUpdate, HosStatus, StatusInitiated, CurrentHOSDetails, RemTimeForShiftReset, RemTimeForReset70, CurrentRecapDetails, TruckNumber, TrainingType, Seat, TimeSeatedUnseated ,'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver ON DUPLICATE KEY UPDATE 
+					i5cul_erd_driverupdate.DriverStatus = i5cul_staging_driver.DriverStatus,
+					i5cul_erd_driverupdate.HOSStatus = i5cul_staging_driver.HosStatus,
+					i5cul_erd_driverupdate.HOSClocks = i5cul_staging_driver.CurrentHOSDetails,
+					i5cul_erd_driverupdate.RemTimeForShiftReset = i5cul_staging_driver.RemTimeForShiftReset,
+					i5cul_erd_driverupdate.RemTimeForReset70 = i5cul_staging_driver.RemTimeForReset70,
+					i5cul_erd_driverupdate.Recaps = i5cul_staging_driver.CurrentRecapDetails,
+					i5cul_erd_driverupdate.TruckId = i5cul_staging_driver.TruckNumber,
+					i5cul_erd_driverupdate.TrainingType = i5cul_staging_driver.TrainingType,
+					i5cul_erd_driverupdate.Seat = i5cul_staging_driver.Seat,
+					i5cul_erd_driverupdate.IsSubmitted = 'Updated',
+					i5cul_erd_driverupdate.ModifiedBy = 999;
+	
+	OPEN stagingCur;
+	
+	get_stg_records: LOOP 
+	
+		FETCH stagingCur into stagingId;
+	
+		IF is_done = 1 THEN
+			LEAVE get_stg_records;
+		END IF;
+		
+		SET is_done = 0;
+				
+		SET @hometimeapproveddttm = (select `HomeTimeApprovedDttm` from i5cul_staging_driver where id = stagingId );
+		SET is_done = 0;
+        
+	
+
+		if(@hometimeapproveddttm != '') THEN
+
+			INSERT INTO `i5cul_erd_location` (`LocationId`, `BeId`, `Name`, `Long`, `Lat`, `StreetAddress`, `City`, `State`, `Zip`, `Timezone`, `PhoneNumber`, `PrimaryContact`, `LocationType`, `Amenities`,`StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`) select concat(`BusinessEntityNumber`,`HomeTimeStartLatitude`,`HomeTimeStartLongitude`), BusinessEntityNumber,'', HomeTimeStartLongitude, HomeTimeStartLatitude, HomeTimeStartAddress, HomeTimeStartCity, HomeTimeStartState, HomeTimeStartZipCode, HomeTimeStartTimeZone, '', '', 'Home', '', Id, 'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver where id = stagingId;
+
+			SET @locationIdHa = last_insert_id(); 
+			update i5cul_erd_location set LocationId = @locationIdHa where Id= @locationIdHa;
+			SET is_done = 0;
+
+			INSERT INTO `i5cul_erd_location` (`LocationId`, `BeId`, `Name`, `Long`, `Lat`, `StreetAddress`, `City`, `State`, `Zip`, `Timezone`, `PhoneNumber`, `PrimaryContact`, `LocationType`, `Amenities`,`StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`) select concat(`BusinessEntityNumber`,`HomeTimeEndLatitude`,`HomeTimeEndLongitude`),BusinessEntityNumber,'', HomeTimeEndLongitude, HomeTimeEndLatitude, HomeTimeEndAddress, HomeTimeEndCity, HomeTimeEndState, HomeTimeEndZipCode, HomeTimeEndTimeZone, '', '', 'Home', '', Id, 'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver where id = stagingId;
+
+			SET @locationIdHd = last_insert_id();
+			update i5cul_erd_location set LocationId = @locationIdHd where Id= @locationIdHd;
+			SET is_done = 0;
+			
+			INSERT INTO `i5cul_erd_orderrequest` (`Id`, `OrderId`, `BeIdShipper`, `BeIdCarrier`, `status`, `RequestType`, `OrderDriverRequirements`, `OrderTrailerRequirements`, `PickupNumber`, `FinalDttm`, `CustomerType`, `DateBooked`, `DateOffered`, `IsCritical`, `Priority`, `RevMile`, `Rpm`, `Revenue`, `IsContracted`,  `IncludeInScheduling`, `Sequence`, `StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`, `ModifiedDate`) select NULL, DriverNumber, BusinessEntityNumber, BusinessEntityNumber, 'Offered', 'HomeTime', NULL, NULL, NULL, NULL, NULL, HomeTimeApprovedDttm, HomeTimeApprovedDttm, 1, 1, NULL, NULL, NULL, 0, 0, NULL, '0', 'New', 999, CURRENT_TIMESTAMP, 999, CURRENT_TIMESTAMP from i5cul_staging_driver where id = stagingId;
+
+			
+			SET is_done = 0;
+
+			INSERT INTO `i5cul_erd_orderdetails` (`OrderRequestId`,`LocationId`, `Type`,`AppointmentOpen`,`AppointmentClose`,`RawApptOpen`,`RawApptClose`, `AppointmentSet`, `PlannedBy`, `LoadType`, `LoadTime`, `DriverInstructions`, `OnSiteBreakFlag`, `PrevOrderDetailsId`, `StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`) select DriverNumber,@locationIdHa, 'HA',HomeTimeStartTime,HomeTimeEndTime,HomeTimeStartTime,HomeTimeEndTime, 1, 'Unknown', 'NA', '0', 'Unknown', 1, null,stagingId,'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver where id = stagingId;
+
+			SET @orderdetailsIdHa = last_insert_id();
+			select `Id` into @orderdetailsValueHa from `i5cul_erd_orderdetails` where Id = @orderdetailsIdHa;
+			SET is_done = 0;
+			
+			INSERT INTO `i5cul_erd_orderdetails` (`OrderRequestId`,`LocationId`, `Type`,`AppointmentOpen`,`AppointmentClose`,`RawApptOpen`,`RawApptClose`, `AppointmentSet`, `PlannedBy`, `LoadType`, `LoadTime`, `DriverInstructions`, `OnSiteBreakFlag`, `PrevOrderDetailsId`, `StagingRecordId`, `IsSubmitted`, `CreatedBy`, `CreatedDate`, `ModifiedBy`) select DriverNumber,@locationIdHd ,'HD',HomeTimeStartTime,HomeTimeEndTime,HomeTimeStartTime,HomeTimeEndTime, 1, 'Unknown', 'NA', '0', 'Unknown', 1, @orderdetailsValueHa, stagingId,'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver where id = stagingId;
+
+			SET @orderdetailsIdHd = last_insert_id();
+			SET @orderdetailsValueHd = (select `Id` from `i5cul_erd_orderdetails` where Id = @orderdetailsIdHd);
+			SET is_done = 0;
+			
+			INSERT INTO `i5cul_erd_driverhometimeupdate` (`DriverId`, `ApprovedDatetime`, `OrderRequestId`, `Reason`, `IsSubmitted`, `CreatedBy`, `CreatedDate`,`ModifiedBy`) select DriverNumber, HomeTimeApprovedDttm, DriverNumber,HomeTimeReason, 'New',999,CURRENT_TIMESTAMP(),999 from i5cul_staging_driver where id = stagingId;
+
+		END IF;
+		
+	END LOOP;
+	CLOSE stagingCur;
+	
+END

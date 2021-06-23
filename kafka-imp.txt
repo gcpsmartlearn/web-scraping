@@ -13,3 +13,20 @@
 /home/tigergraph/MercuryDataPipeline/CMAK/target/universal/cmak-3.0.0.5
 
 /usr/bin/http-server
+
+gcloud config get-value project
+advance-medium-316412
+
+#add to container registry
+gcloud builds submit --tag gcr.io/advance-medium-316412/kubernetes-app .
+
+#create clusters
+gcloud container clusters create body-mass-index --num-nodes 1 --zone us-west1-a
+
+kubectl get nodes
+kubectl apply -f deployment.yaml
+kubectl get deployments
+kubectl describe deployments
+kubectl get pods
+kubectl apply -f service.yaml
+kubectl get services
